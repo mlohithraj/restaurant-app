@@ -27,3 +27,33 @@
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }
+
+
+.summary {
+  border: 1px solid black; 
+  padding: 20px; 
+  max-width: 630px; 
+  margin: 0 auto; 
+  background-color: black;
+  color: rgb(238, 236, 236);
+  position: relative;
+  margin-top: -13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary h1 {
+  text-align: center;
+}
+
+.summary .paragraph {
+  text-align: center;
+}
+
+
+
+
+
+
