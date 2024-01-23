@@ -42,7 +42,7 @@ const AvailableMeals = () => {
     <Card>
     <section className={classes.mealsAvailable}>
         <ul className={classes.dummyMeal}>
-        {mealAvailable}
+        {mealAvailable} 
         </ul>
         </section>
     </Card>

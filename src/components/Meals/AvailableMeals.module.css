@@ -1,32 +1,24 @@
 /* AvailableMeals.module.css */
 
 .mealsAvailable {
-    border: .3px solid rgb(240, 232, 216); 
-    border-radius: 10px;
-    padding: 20px; 
     max-width: 800px; 
     margin: 0 auto; 
+    padding: 20px; 
     background-color: #fff;
     color: black;
     margin-top: 30px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: solid;
-}
-
-.dummyMeal {
+  }
+  
+  .dummyMeal {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.dummyMeal li {
-    margin: 10px;
-    text-align: center;
-    width: 200px;
-}
+  }
   
+  .dummyMeal li {
+    margin: 10px;
+    width: 750px;
+  }
+
