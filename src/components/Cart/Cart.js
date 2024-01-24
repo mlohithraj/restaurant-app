@@ -18,11 +18,21 @@ const Cart = (props) => {
     return acc;
   }, []);
 
+  const cartItemRemoveHandler = (id) => {
+    cartCntx.removeItem(id);
+  };
+
+  const cartItemAddHandler = (item) => {
+    cartCntx.addItem({...item, amount: 1});
+  };
+
   const cartItems = (
     <ul className={classes['cart-items']}>
       {combinedItems.map((item) => (
         <li key={item.id}>
           Name: {item.name} - Quantity: {item.quantity} - Total Price: Rs: {item.totalPrice.toFixed(2)}
+          <button onClick={() => cartItemRemoveHandler(item.id)}>-</button>
+          <button onClick={() => cartItemAddHandler(item)}>+</button>
         </li>
       ))}
     </ul>
@@ -38,7 +48,7 @@ const Cart = (props) => {
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
-        <span>Rs:{totalAmount}</span>
+        <span>{totalAmount} Rs</span>
       </div>
       <div className={classes.actions}>
         <button className={classes['button-alt']} onClick={props.onClose}>
@@ -51,6 +61,7 @@ const Cart = (props) => {
 };
 
 export default Cart;
+
 
 
 
